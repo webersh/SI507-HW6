@@ -25,7 +25,7 @@ This experience is *not in any way* about becoming an expert JavaScript programm
 
 ### Specifically
 
-Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give. 
+Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give.
 
 **To complete and submit this assignment, you should:**
 
@@ -46,7 +46,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * In answering questions, assume all of the questions include a *explain briefly* note -- you do NOT have to, and should not, write extended paragraphs. Be as concise as you can and explain in your own words. Don't worry about "whether it's enough" -- just worry about conveying your understanding so you can read it later, or even give it to someone else, and the answers will help/make sense.
 
-* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours. 
+* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours.
 
 * **For grading:** we are grading on...
 	* Following the instructions
@@ -57,7 +57,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
+* Like this:
 * **Jackie Cohen (jczetta)**
 * Yea-Ree Chang (cyearee)
 * Ruchi Ookalkar (ruchido)
@@ -78,26 +78,37 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
+		A comment code is designated by //
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+		Put a script tag in and write in the script, this includes curly brackets and a closing tag (Example: lines 7 and 34)
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+		Console and alert. Alert pops up on the page so a user can see it. But a Console runs in the background, so a user has to inspect the page to see it.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+	You would have to comment out line 12 (alert('hello')).
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+	In line 17, change the value assignment from 'a name' to 'Shannon Weber'
 
 * **What does the word `document` represent in this code? Explain briefly.**
+	This refers to the entire webpage that will be displayed when the code runs.
 
-* **What is happening in line 12 ( 
+* **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
+	This line gets the length of the number of all lists of bulleted items, in this case the lists containing fruits and universities.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+	The background color would be white.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+	Change line 39 to new blue color code. There is code for the border element that paragraphs are set to, which is gray. A new color can be selected for the paragraph border element, which can be done in JavaScript or CSS.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+	Looking at the code that creates the "Go Blue" statement when you highlight and copy University of Michigan, i created a similar function for McGill.  
+
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
