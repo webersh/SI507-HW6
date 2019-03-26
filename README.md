@@ -58,12 +58,12 @@ Below are a bunch of questions and indications of things to do. For each indicat
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
 * Like this:
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+* **Shannon Weber (webersh)**
+* Cassandra Eddy (cikeddy)
+* Salma Siddiqui (salmasid)
+* Min Jin Kim (minjin)
+* Kim Vuong (kvuong)
+* Radhika Sondhi (rsondhi)
 
 ## Questions & code instructions
 
@@ -122,10 +122,11 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-
+	The code allows for a text box for the wow button because the first part of the code defines the handle click function, which creates an alert which results in a text box. This function is then invoked with the Wow button, so the alert appears again.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
+	added code at lines 42-43 and 87
 
 
 
@@ -134,14 +135,18 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
-
+	Lines 7-13 assign style types for displayed text so that when the input is invalid, the text stating an error is red. When the input is valid, the displayed text is set to blue.   
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+	This line is assigning a regular expression to identify whether or not the inputted text is valid. It is making sure that the inputted string starts with a letter (either upper or lower case).
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+	JavaScript uses curly brackets ({}) to signify the start/end of conditional statements, whereas Python uses indents to designate conditional statements.  
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+	The 10000 is the assigned number of milliseconds the displayed text should take to fade out or disappear from the screen.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
+	The ready method makes sure that the function is ready and available to run once the webpage has loaded. In this case, the method is being applied to the function that is checking each submission/event is valid/invalid (each time something is entered into the text box and "submit is clicked").
 
 ```js
 $(document).ready(function(){
@@ -151,3 +156,4 @@ $(document).ready(function(){
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
+	Code added at lines 24-25
